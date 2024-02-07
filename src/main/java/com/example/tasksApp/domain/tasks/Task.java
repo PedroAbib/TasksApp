@@ -18,7 +18,7 @@ public class Task {
     @Id @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
 
-    @NotEmpty(message = "Campo não pode estar vazio")
+    @NotEmpty
     private String name;
 
     private boolean isChecked;

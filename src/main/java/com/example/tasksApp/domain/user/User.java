@@ -16,11 +16,11 @@ import lombok.NoArgsConstructor;
 public class User {
     @Id @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
-    @NotEmpty(message = "Campo nome é obrigatório")
+    @NotEmpty
     private String name;
-    @NotEmpty(message = "Campo email é obrigatório")
+    @NotEmpty
     private String email;
-    @NotEmpty(message = "Campo senha é obrigatório")
+    @NotEmpty
     private String password;
 
     public User(UserRecord userDTO) {
