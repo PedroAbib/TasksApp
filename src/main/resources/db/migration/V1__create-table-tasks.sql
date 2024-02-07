@@ -1,0 +1,5 @@
+CREATE TABLE task (
+    id TEXT PRIMARY KEY UNIQUE NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    is_checked BOOLEAN DEFAULT false
+);
