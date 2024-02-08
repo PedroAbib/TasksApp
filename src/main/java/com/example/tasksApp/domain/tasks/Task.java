@@ -18,7 +18,7 @@ public class Task {
     @Id @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
 
-    @NotEmpty
+    @NotBlank
     private String name;
 
     private boolean isChecked;

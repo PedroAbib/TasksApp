@@ -1,6 +1,7 @@
 package com.example.tasksApp.domain.user;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -16,11 +17,11 @@ import lombok.NoArgsConstructor;
 public class User {
     @Id @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
-    @NotEmpty
+    @NotBlank
     private String name;
-    @NotEmpty
+    @NotBlank
     private String email;
-    @NotEmpty
+    @NotBlank
     private String password;
 
     public User(UserRecord userDTO) {
