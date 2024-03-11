@@ -1,4 +1,4 @@
-package com.example.tasksApp.infra;
+package com.tasksApp.infra;
 
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.validation.ConstraintViolationException;

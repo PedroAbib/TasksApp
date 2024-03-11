@@ -1,4 +1,4 @@
-package com.example.tasksApp.infra;
+package com.tasksApp.infra;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

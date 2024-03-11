@@ -1,11 +1,10 @@
-package com.example.tasksApp.domain.tasks;
+package com.tasksApp.domain.tasks;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotEmpty;
 import lombok.*;
 
 @Entity

@@ -1,4 +1,4 @@
-package com.example.tasksApp.domain.tasks;
+package com.tasksApp.domain.tasks;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

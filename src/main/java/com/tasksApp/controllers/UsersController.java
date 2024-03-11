@@ -1,10 +1,9 @@
-package com.example.tasksApp.controllers;
+package com.tasksApp.controllers;
 
-import com.example.tasksApp.domain.user.User;
-import com.example.tasksApp.domain.user.UserRecord;
-import com.example.tasksApp.services.UsersService;
+import com.tasksApp.domain.user.User;
+import com.tasksApp.domain.user.UserRecord;
+import com.tasksApp.services.UsersService;
 import jakarta.validation.Valid;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

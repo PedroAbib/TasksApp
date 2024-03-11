@@ -1,8 +1,8 @@
-package com.example.tasksApp.services;
+package com.tasksApp.services;
 
-import com.example.tasksApp.domain.tasks.Task;
-import com.example.tasksApp.domain.tasks.TaskRecord;
-import com.example.tasksApp.domain.tasks.TasksRepository;
+import com.tasksApp.domain.tasks.Task;
+import com.tasksApp.domain.tasks.TaskRecord;
+import com.tasksApp.domain.tasks.TasksRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

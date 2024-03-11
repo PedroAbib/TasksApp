@@ -1,4 +1,4 @@
-package com.example.tasksApp.infra;
+package com.tasksApp.infra;
 
 import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Component;

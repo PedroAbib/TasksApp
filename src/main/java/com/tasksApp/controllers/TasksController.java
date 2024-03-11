@@ -1,8 +1,8 @@
-package com.example.tasksApp.controllers;
+package com.tasksApp.controllers;
 
-import com.example.tasksApp.domain.tasks.Task;
-import com.example.tasksApp.domain.tasks.TaskRecord;
-import com.example.tasksApp.services.TasksServices;
+import com.tasksApp.domain.tasks.Task;
+import com.tasksApp.domain.tasks.TaskRecord;
+import com.tasksApp.services.TasksServices;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

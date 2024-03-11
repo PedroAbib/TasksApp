@@ -1,9 +1,9 @@
-package com.example.tasksApp.services;
+package com.tasksApp.services;
 
-import com.example.tasksApp.domain.user.User;
-import com.example.tasksApp.domain.user.UserRecord;
-import com.example.tasksApp.domain.user.UsersRepository;
-import com.example.tasksApp.infra.PasswordEncryptor;
+import com.tasksApp.domain.user.User;
+import com.tasksApp.domain.user.UserRecord;
+import com.tasksApp.domain.user.UsersRepository;
+import com.tasksApp.infra.PasswordEncryptor;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.example.tasksApp;
+package com.tasksApp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
