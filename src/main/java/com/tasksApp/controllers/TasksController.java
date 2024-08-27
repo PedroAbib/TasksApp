@@ -23,9 +23,9 @@ public class TasksController {
     }
 
     @PostMapping
-    public ResponseEntity<Void> createTask(@RequestBody @Valid TaskRecord data) {
-        tasksServices.createTask(data);
-        return ResponseEntity.ok().build();
+    public ResponseEntity<Task> createTask(@RequestBody @Valid TaskRecord data) {
+        Task newTask = tasksServices.createTask(data);
+        return ResponseEntity.ok(newTask);
     }
 
     @PutMapping("/{taskId}")

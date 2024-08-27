@@ -19,9 +19,9 @@ public class TasksServices {
         return repository.findAll();
     }
 
-    public void createTask(TaskRecord data) {
+    public Task createTask(TaskRecord data) {
         Task newTask = new Task(data);
-        repository.save(newTask);
+        return repository.save(newTask);
     }
 
     public void updateTask(String taskId, TaskRecord newData) {
