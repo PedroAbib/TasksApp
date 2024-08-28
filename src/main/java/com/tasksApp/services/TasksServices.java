@@ -4,9 +4,11 @@ import com.tasksApp.domain.tasks.Task;
 import com.tasksApp.domain.tasks.TaskRecord;
 import com.tasksApp.domain.tasks.TasksRepository;
 import jakarta.persistence.EntityNotFoundException;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 
@@ -30,11 +32,28 @@ public class TasksServices {
 
         if (existingTaskOptional.isPresent()) {
             Task existingTask = existingTaskOptional.get();
-            existingTask.setName(newData.name());
+            if (newData.name() != null) {
+                existingTask.setName(newData.name());
+            }
             repository.save(existingTask);
         } else {
             throw new EntityNotFoundException();
         }
+    }
+
+    public void toggleTask(String taskId, TaskRecord newData) {
+        Optional<Task> optionalTask = repository.findById(taskId);
+
+        if (optionalTask.isPresent()) {
+            Task task = optionalTask.get();
+            if (newData.checked() != null) {
+                task.setChecked(newData.checked());
+            }
+            repository.save(task);
+        } else {
+            throw new EntityNotFoundException();
+        }
+
     }
 
     public void deleteTask(String taskId) {
@@ -46,6 +65,5 @@ public class TasksServices {
             throw new EntityNotFoundException();
         }
     }
-
 
 }

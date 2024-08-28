@@ -34,6 +34,12 @@ public class TasksController {
         return ResponseEntity.ok().build();
     }
 
+    @PutMapping("/toggle/{taskId}")
+    public ResponseEntity<Void> toggleTask(@PathVariable String taskId,@RequestBody @Valid TaskRecord newData) {
+        tasksServices.toggleTask(taskId, newData);
+        return ResponseEntity.ok().build();
+    }
+
     @DeleteMapping("/{taskId}")
     public ResponseEntity<Void> deleteTask(@PathVariable String taskId) {
         tasksServices.deleteTask(taskId);
